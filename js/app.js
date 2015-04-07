@@ -46,4 +46,3 @@ $(document).keydown(function(e) {
       $('.ryu-still').show();
     }
   });
-}
