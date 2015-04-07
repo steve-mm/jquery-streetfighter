@@ -32,18 +32,3 @@ function playHadouken() {
         $('#hadouken-sound')[0].play();
     }
     
-$(document).keydown(function(e) {
-    if (e.keyCode == 88) {
-      playCool();
-      $('.ryu-still').hide();
-      $('.ryu-cool').show();
-    }   
-  }).keyup(function(e) {
-    if (e.keyCode == 88) {
-      $('#cool')[0].pause();
-      $('#cool')[0].load();
-      $('.ryu-cool').hide();
-      $('.ryu-still').show();
-    }
-  });
-}
