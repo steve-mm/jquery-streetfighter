@@ -40,6 +40,17 @@ $(document).keydown(function(e) {
       $('.ryu-still').show();
     }
   });
+$(document).keydown(function(e) {
+    if (e.keyCode == 88) {
+      $('.ryu-ready').hide();
+      $('.ryu-cool').show();
+    }   
+  }).keyup(function(e) {
+    if (e.keyCode == 88) {
+      $('.ryu-cool').hide();
+      $('.ryu-ready').show();
+    }
+  });  
 });
 
 
