@@ -23,9 +23,6 @@ $(document).ready(function(){
         $('.ryu-throwing').hide();
         $('.ryu-ready').show();
     });
-
-});
-
 function playHadouken() {
         $('#hadouken-sound')[0].volume = 0.5;
         $('#hadouken-sound')[0].load();
@@ -34,15 +31,15 @@ function playHadouken() {
     
 $(document).keydown(function(e) {
     if (e.keyCode == 88) {
-      playCool();
-      $('.ryu-action').hide();
+      $('.ryu-still').hide();
       $('.ryu-cool').show();
     }   
   }).keyup(function(e) {
     if (e.keyCode == 88) {
-      $('#cool')[0].pause();
-      $('#cool')[0].load();
       $('.ryu-cool').hide();
       $('.ryu-still').show();
     }
   });
+});
+
+
